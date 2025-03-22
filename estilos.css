@@ -91,7 +91,7 @@ header {
   }
 
   .izquierda {
-    max-width: 30%; /* Ensures it doesn't overflow */
+    max-width: 35%; /* Ensures it doesn't overflow */
     font-size: 9pt;
     margin-top: 42px;
   }
@@ -100,7 +100,7 @@ header {
   }
 
   .derecha {
-    max-width: 80%; /* Ensures it doesn't overflow */
+    max-width: 65%; /* Ensures it doesn't overflow */
   }
 
   .derecha img {
