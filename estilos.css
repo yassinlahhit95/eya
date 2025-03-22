@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #181bd7;
+}
+h2 {
+  color: #189ed7;
+}
+
+p {
+  text-align: justify;
+  /* white-space: pre-wrap; with this line , we will just use enter to break line without <br/> */
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.izquierda {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.image-container {
+  background: url("/imagenes/header_barralat.png") no-repeat center;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+.background-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.background-images img {
+  width: 40%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.noticia {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.noticia img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #189ed7;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+#barra {
+  width: 95%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    align-items: stretch; /* Ensures both sections take full width */
+  }
+
+  .izquierda {
+    max-width: 30%; /* Ensures it doesn't overflow */
+    font-size: 9pt;
+    margin-top: 42px;
+  }
+  .background-images {
+    width: 200%; /* Ensures it doesn't overflow */
+  }
+
+  .derecha {
+    max-width: 80%; /* Ensures it doesn't overflow */
+  }
+
+  .derecha img {
+    max-width: 100%; /* Ensures images fit within the container */
+    height: auto; /* Keeps aspect ratio */
+  }
+
+  p {
+    font-size: 10pt; /* Reduces text size for better readability */
+  }
+
+  #barra-footer {
+    width: 200px;
+  }
+  h2 {
+    font-size: 12pt;
+  }
+
+  header img {
+    width: 40%;
+  }
+  input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: stretch; /* Ensures both sections take full width */
+  }
+
+  .izquierda {
+    max-width: 30%; /* Ensures it doesn't overflow */
+    font-size: 9pt;
+    margin-top: 42px;
+  }
+  .background-images {
+    width: 200%; /* Ensures it doesn't overflow */
+  }
+
+  .derecha {
+    max-width: 80%; /* Ensures it doesn't overflow */
+  }
+
+  .derecha img {
+    max-width: 100%; /* Ensures images fit within the container */
+    height: auto; /* Keeps aspect ratio */
+  }
+
+  p {
+    font-size: 10pt; /* Reduces text size for better readability */
+  }
+
+  #barra-footer {
+    width: 200px;
+  }
+  h2 {
+    font-size: 12pt;
+  }
+
+  header img {
+    width: 40%;
+  }
+  input {
+    width: 100%;
+  }
+}
